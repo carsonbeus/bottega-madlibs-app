@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Input from './input';
+import Content from './content';
 
 class Card extends Component {
 
@@ -30,8 +31,7 @@ class Card extends Component {
 
   handleInputChange(event) {
     this.setState({ [event.target.name]: event.target.value })
-    // console.log(this.state.color);
-    console.log(event.target.name)
+    // console.log(event.target.color)
   }
 
   render() {
@@ -64,7 +64,7 @@ class Card extends Component {
         {
           inputData.map(data => Input( (data), this.handleInputChange ))
         }
-
+        <Content data={this.state}/>
         </div>
     )
 
@@ -72,3 +72,4 @@ class Card extends Component {
   }
 }
 export default Card;
+
