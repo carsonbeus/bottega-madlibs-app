@@ -83,9 +83,6 @@ body {
 } 
 
 
-
-
-
 .card {
     min-height: 736px;
     max-height: 994px;
@@ -116,16 +113,18 @@ body {
 
     button {
         justify-self: center;
-        transform: translateY(50%);
+
     }
 
     &__generate {
         background-color: #00CB79;
+        transform: translateY(-355px);
         @include button;
     }
 
     &__clear {
         background-color: #45B0E5;
+        transform: translateY(50%);
         @include button;
     }
 
