@@ -10,6 +10,14 @@
         font-weight: bold;    
 }
 
+.green {
+    background: #00CB79
+}
+
+.gray {
+    background: #444444d5;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -178,7 +186,7 @@ body {
     &__number {
         grid-column: number-s/number-e;
 
-        background-color: #00CB79;
+        // background-color: #00CB79;
         color: white;
         font-size: 20px;
         line-height: 24px;
